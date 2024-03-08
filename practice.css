@@ -1,0 +1,237 @@
+/* body{ 
+    background-color: blue;
+    color : yellow;
+} */
+
+*{
+    background-color: aqua;
+    font-size: 25px;
+}
+
+h1{
+    color:#ff0000;
+}
+
+/* .one{
+    color: green;
+    background-color: aqua;
+    font-size:30px;
+}
+.two{
+    color:blue;
+}
+p{
+    color:blue;
+}
+li{
+    color:aqua;
+}
+
+#two{
+    background-color: yellow;
+    color: black;
+    font-size:45px;
+}
+
+#two, ol{
+    font-size:45px;
+    color:white;
+    background-color: black;
+}
+
+.border{
+    border:5px solid red;
+    font-size:25px;
+    margin:100px;
+    padding:50px;  
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav ul.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+}
+
+nav li {
+    margin: 0 1rem;
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content li {
+    padding: 10px;
+    text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+main {
+    padding: 2rem;
+}
+
+.hero {
+    text-align: center;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #555;
+}
+
+.services {
+    margin-top: 2rem;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+} */
+
+/* .pad { */
+    /* padding: 20px;
+}
+
+.pad1 {
+    padding: 10px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* h1{
+    text-align: center;
+    font-size : 50px;
+    color: rgb(183, 29, 29);
+    text-decoration: underline;
+    font-family: cursive;
+}
+
+p{
+    font-size: 25px;
+    text-decoration:center;
+    font-weight:900;
+    border: 2px dashed black;
+}
+
+p:hover{
+    border: 10px solid red;
+    background-color: yellow;
+}
+
+.box1{
+    background-color: red;
+}
+
+.box2{
+    background-color: blue;
+} */
+/* 
+div{
+    display: inline-block;
+    width : 250px;
+    margin:25px;
+    font-size: 25px;
+    padding: 10px;
+} */
+
+/* span{
+    display: block;
+} */
+
+/* FLEX */
+
+/* .item{
+    width : 250px;
+    height : 100px;
+}
+.one{
+    background-color: orange;
+    border: 2px solid Black;
+}
+
+.two{
+    background-color: white;
+    border: 2px solid Black;
+}
+
+.THREE{
+    background-color: green;
+    border: 2px solid Black;
+}
+
+.container{
+    display: flex;
+    flex-direction: row-reverse;
+} */

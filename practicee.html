@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate Table with Bootstrap</title>
+    <!-- Include Bootstrap CSS (make sure to specify the correct path) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <button class="btn btn-primary" id="generateTableButton" onclick="generateTable(this);">Generate Table</button>
+        <button></button>
+        <div id="tableContainer"></div>
+    </div>
+
+    <script>
+        // Function to generate the table
+        function generateTable(button) {
+            // Disable the button
+            button.disabled = true;
+
+            // Get the table container div
+            var tableContainer = document.getElementById("tableContainer");
+
+            // Create a table element with Bootstrap classes
+            var table = document.createElement("table");
+            table.classList.add("table", "table-bordered");
+
+            // Create the table header
+            var thead = document.createElement("thead");
+            thead.classList.add("thead-dark");
+            var headerRow = thead.insertRow(0);
+            var headers = ["Header 1", "Header 2"];
+            for (var i = 0; i < headers.length; i++) {
+                var headerCell = document.createElement("th");
+                headerCell.textContent = headers[i];
+                headerRow.appendChild(headerCell);
+            }
+            table.appendChild(thead);
+
+            // Create the table body with two rows and two cells
+            var tbody = document.createElement("tbody");
+            for (var i = 0; i < 2; i++) {
+                var row = tbody.insertRow(i);
+                for (var j = 0; j < 2; j++) {
+                    var cell = row.insertCell(j);
+                    cell.textContent = "Row " + (i + 1) + ", Cell " + (j + 1);
+                }
+            }
+            table.appendChild(tbody);
+
+            // Add the table to the container
+            tableContainer.appendChild(table);
+        }
+    </script>
+
+    <!-- Include Bootstrap JS (make sure to specify the correct path) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo">JavaScript can change HTML content.</p>
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = 
+    <table border="2">
+    <tr>
+    <td>Name</td>
+    <td>Age</td>
+    <td>Gender</td>
+    <td>Year</td>
+    </tr>
+
+    <tr>
+    <td>ARUN</td>
+    <td>18</td>
+    <td>MALE</td>
+    <td>2nd</td>
+    </tr>
+
+    <tr>
+    <td>Antony</td>
+    <td>18</td>
+    <td>MAlE</td>
+    <td>2nd</td>
+    </tr>
+
+    <tr>
+    <td>Vamshi</td>
+    <td>18</td>
+    <td>MAlE</td>
+    <td>2nd</td>
+    </tr>
+
+    <tr>
+    <td>Sathwik</td>
+    <td>18</td>
+    <td>MAlE</td>
+    <td>2nd</td>
+    </tr>
+    </table>
+
+
+'>Click Me!</button>
+
+</body>
+</html> -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TITLE</title>
+</head>
+<body>
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+    <table border="2">
+        <tr>
+            <td>Name</td>
+            <td>Age</td>
+            <td>Gender</td>
+            <td>Year</td>
+        </tr>
+
+        <tr>
+            <td>ARUN</td>
+            <td>18</td>
+            <td>MALE</td>
+            <td>2nd</td>
+        </tr>
+
+        <tr>
+            <td>Antony</td>
+            <td>18</td>
+            <td>MAlE</td>
+            <td>2nd</td>
+        </tr>
+
+        <tr>
+            <td>Vamshi</td>
+            <td>18</td>
+            <td>MAlE</td>
+            <td>2nd</td>
+        </tr>
+
+        <tr>
+            <td>Sathwik</td>
+            <td>18</td>
+            <td>MAlE</td>
+            <td>2nd</td>
+        </tr>
+    </table>
+    
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Generate Table on Button Click</title>
+</head>
+<body>
+    <button id="generateTableButton">Generate Table</button>
+    <div id="tableContainer"></div>
+
+    <script>
+        // Function to generate the table
+        function generateTable() {
+            // Get the table container div
+            var tableContainer = document.getElementById("tableContainer");
+
+            // Create a table element
+            var table = document.createElement("table");
+
+            // Create the table rows and cells
+            for (var i = 0; i < 2; i++) {
+                var row = table.insertRow(i);
+                for (var j = 0; j < 2; j++) {
+                    var cell = row.insertCell(j);
+                    cell.innerHTML = "Row " + (i + 1) + ", Cell " + (j + 1);
+                }
+            }
+
+            // Add the table to the container
+            tableContainer.appendChild(table);
+        }
+
+        // Add a click event listener to the button
+        var generateTableButton = document.getElementById("generateTableButton");
+        generateTableButton.addEventListener("click", generateTable);
+    </script>
+</body>
+</html> -->

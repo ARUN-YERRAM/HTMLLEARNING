@@ -1,0 +1,157 @@
+HTML CODE : File name: portfolio.html
+ 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <div class = "hero">
+        <nav>
+            <img src="Passports.jpg" class="logo" height="150x" width="100px">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Academics</a></li>
+                <li><a href="#">Technical Skills</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Achievements</a></li>
+                <li><a href="#">Contact Me</a></li>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+            </ul>
+        </nav>
+
+        <div class = "detail">
+            <h1>I,m Arun <span>Yerram</span></h1>
+            <p>This is my Portfolio website to showes all. 
+            <br> Details and work experience; 
+            </p>
+
+        <a href="#">Download CV</a>
+        </div>
+
+        <div class="images">
+            <img src="" class="shape">
+            <img src="" class="Boy">
+        </div>
+
+    </div>
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+css code:
+File name : portfolio.css
+
+
+
+ *{
+    margin: 100;
+    padding : 100;
+    font-family: sans-serif;
+    color:#ffa500;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #eff4fd;
+}
+
+nav{
+    display: flex;
+    width: 84%;
+    margin : auto;
+    padding : 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: red;
+} 
+
+.detail{
+    margin-left: 8%;
+    margin-top: 13%;
+}
+
+.detail h1{
+    font-size: 50px;
+    color : black;
+    margin-bottom: 20px;
+}
+
+span{
+    color:orange;
+}
+
+.detail p{
+    color:#555;
+    line-height: 22px;
+} 
+
+.detail a{
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+} 
+
+.images:hover .shape{
+    bottom: 40px;
+}
+
+.images:hover .boy{
+    left: 45%;
+} 
+
+
+
